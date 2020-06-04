@@ -15,6 +15,7 @@
 #include <QCommandLineParser>
 #include <QDebug>
 #include <iostream>
+#include <cmath>
 
 auto idToColor(std::uint64_t const id) noexcept -> QColor {
 	constexpr int d = 256;
@@ -255,5 +256,5 @@ int main(int argc, char* argv[])
 
 	outputImg.save(outPath);
 
-	return a.exec();
+	return 0;
 }
